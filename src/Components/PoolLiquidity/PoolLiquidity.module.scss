@@ -1,0 +1,132 @@
+@import "@/styles/variables";
+
+.PoolLiquidity{
+	.box{
+		background-color: $primaryblack;
+		padding: 1rem 2rem;
+		border-radius: .5rem;
+
+		.box_header{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+		
+			& h2 {
+				font-size: 2rem;
+			}
+
+			& p {
+				background-color: $primaryYellow;
+				padding: .5rem 1rem;
+				border-radius: .5rem;
+				color: $primaryblack;
+				font-weight: 900;
+				font-size: 1.3rem;
+				cursor: pointer;
+			}
+		}
+
+		.liquidity{
+			border: 1px solid #CFF80B;
+			border-radius: .5rem;
+			padding: 1rem;
+			line-height: 0;
+
+			.liquidity_header{
+
+			}
+			
+			.liquidity_positions{
+
+				.liquidity_positions_list{
+
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					line-height: 0;
+
+					.mark{
+						background-color: $primaryYellow;
+						color: $primaryblack;
+						padding: .5rem;
+						border-radius: .5rem;
+					}
+
+					.paragraph{
+						font-size: 1.2rem;
+					}
+
+					.hide{
+
+					}
+
+					.highlight{
+						background-color: $primaryYellow;
+						border-radius: .5rem;
+						padding: 1rem .5rem;
+						color: $primaryblack;
+					}
+				}
+
+				.liquidity_positions_info{
+
+				}
+			}
+		}
+
+
+		.box_middle{
+			text-align: center;
+
+			& p {
+				font-size: 1.3rem;
+			}
+
+			& button {
+				padding: .5rem 3rem;
+				margin-top: .5rem;
+				background-color: $primaryYellow;
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: $primaryblack;
+				border: 0;
+				cursor: pointer;
+			}
+		}
+
+		.box_info{
+			display: grid;
+			grid-template-columns: 1.5fr 1fr;
+			gap: 1rem;
+			margin-top: 2rem;
+			line-height: 0;
+
+			& h5 {
+				font-size: 1.1rem;
+			}
+
+			& p {
+				line-height: 1;
+			}
+
+			.box_info_left, .box_info_right{
+				border: 1px solid $primaryYellow;
+				padding: .5rem;
+				border-radius: .5rem;
+				line-height: 0;	
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 35em) {
+	.hide {
+		display:none;
+	}
+
+	.box_info {
+		line-height: 1;
+		width: 100%;
+		font-size: .8rem;
+	}
+}

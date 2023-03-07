@@ -1,6 +1,15 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import '@/styles/globals.scss'
+import type { AppType,  AppProps } from 'next/app'
+import {NavBar} from "@/Components";
+import {WalletProvider} from "@/Context/WalletContext";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+const NextApp:AppType = ({ Component, pageProps }: AppProps) => (
+  <div>
+    <WalletProvider>
+        <NavBar />
+        <Component {...pageProps} />
+    </WalletProvider>
+  </div>
+);
+
+export default NextApp;

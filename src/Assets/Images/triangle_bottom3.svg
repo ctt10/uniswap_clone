@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1048.14" height="1048.14" viewBox="0 0 1048.14 1048.14">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.23" cy="1.23" r="1.533" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.087" stop-color="#fcfefe"/>
+      <stop offset="0.096" stop-color="#6fc6e6"/>
+      <stop offset="0.122" stop-color="#7aaef1" stop-opacity="0.894"/>
+      <stop offset="0.155" stop-color="#79a1f2" stop-opacity="0.808"/>
+      <stop offset="0.234" stop-color="#638ad9" stop-opacity="0.659"/>
+      <stop offset="0.565" stop-color="#5027f8" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#3f1feb" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="Rectangle_204" x="0" y="0" width="1048.14" height="1048.14" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#b449fb" flood-opacity="0.549" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <rect id="Rectangle_204-2" data-name="Rectangle 204" width="741.147" height="741.147" rx="120" transform="translate(524.07) rotate(45)" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_204)">
+      <rect id="Rectangle_204-3" data-name="Rectangle 204" width="741.147" height="741.147" rx="120" transform="translate(524.07) rotate(45)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
